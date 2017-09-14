@@ -1,7 +1,5 @@
 # ada-hacktivpress
-> ada-hacktivpress merupakan simple blog
-> Aplikasi ini di buat untuk memenuhi syarat ujian daripada phase 2
-> This application has a lot of bug, because this bug purpose to finish the minimum requirment for the examination
+> ada-hacktivpress merupakan simple blog. Aplikasi ini di buat untuk memenuhi syarat ujian daripada phase 2. This application has a lot of bug, because this bug purpose to finish the minimum requirment for the examination
 
 
 ## SERVER: REST API
@@ -25,7 +23,7 @@
 .. update soon
 
 
-### Usage
+## Usage
 
 This project contain 2 side Server and Client:
 
