@@ -21,8 +21,8 @@
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">  
-          <!-- <li><a href="#">Selamat datang {{user.username}}</a></li>
-          <li><a href="#" @click.prevent="logoutUser">Logout</a></li> -->
+          <!-- <li><a href="#">Selamat datang {{user.username}}</a></li> -->
+          <li><router-link to="/login">Login</router-link></li>
         </ul>
       </div>
     </div>

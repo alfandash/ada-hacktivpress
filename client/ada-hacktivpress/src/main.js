@@ -5,6 +5,13 @@ import App from './App'
 import router from './router'
 import store from './vuex/store'
 
+// require axios
+import axios from 'axios'
+
+Vue.prototype.$http = axios.create({
+  baseURL: 'http://localhost:3000/'
+})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
