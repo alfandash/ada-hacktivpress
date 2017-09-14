@@ -4,7 +4,7 @@
 > This application has a lot of bug, because this bug purpose to finish the minimum requirment for the examination
 
 
-## REST API
+## SERVER: REST API
  list of basic routes:
 
 | Route | HTTP | Desription|
@@ -19,6 +19,10 @@
 | `/blog` | POST | Create article | |
 | `/blog/:id` | PUT | Update Articles | |
 | `/blog/:id` | DELETE | Delete Articles | |
+
+## CLIENT: 
+
+.. update soon
 
 
 ### Usage
