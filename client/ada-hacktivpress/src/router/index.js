@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import HighlightArticles from '@/components/HighlightArticles'
 import DetailArticles from '@/components/DetailArticles'
 import Login from '@/components/Login'
+import CreateBlog from '@/components/CreateBlog'
 
 Vue.use(Router)
 
@@ -18,6 +19,10 @@ export default new Router({
           component: HighlightArticles
         }
       ]
+    },
+    {
+      path: '/create',
+      component: CreateBlog
     },
     {
       path: '/login',
