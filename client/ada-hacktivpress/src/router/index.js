@@ -5,6 +5,7 @@ import HighlightArticles from '@/components/HighlightArticles'
 import DetailArticles from '@/components/DetailArticles'
 import Login from '@/components/Login'
 import CreateBlog from '@/components/CreateBlog'
+import MyArticles from '@/components/MyArticles'
 
 Vue.use(Router)
 
@@ -23,6 +24,10 @@ export default new Router({
     {
       path: '/create',
       component: CreateBlog
+    },
+    {
+      path: '/myblog',
+      component: MyArticles
     },
     {
       path: '/login',

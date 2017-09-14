@@ -66,10 +66,12 @@ export default {
           this.alertMsg = 'berhasil inputnya cuy'
         } else {
           console.log(data)
+          this.alertMsg = data
         }
       })
       .catch((error) => {
         console.log(error)
+        this.alertMsg = error
       })
     },
     cancel () {

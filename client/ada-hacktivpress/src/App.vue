@@ -21,12 +21,17 @@ export default {
   },
   methods: {
     ...mapActions([
-      'getAllArticles'
+      'getAllArticles',
+      'getUserLogin',
+      'getUserLoginArticles'
     ])
   },
   created () {
     let token = localStorage.getItem('ada-hacktivpress')
     if (token !== null) {
+      this.getUserLogin(token)
+      this.getUserLoginArticles(token)
+      this.getAllArticles()
     } else {
       this.getAllArticles()
     }

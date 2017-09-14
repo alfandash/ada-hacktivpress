@@ -15,7 +15,8 @@ const store = new Vuex.Store({
     userLogin: {
       token: '',
       username: '',
-      email: ''
+      email: '',
+      id: ''
     },
     isLogin: false,
     userLoginArticles: []
@@ -69,7 +70,8 @@ const store = new Vuex.Store({
       })
     },
     getUserLoginArticles ({ commit }, tokenUser) {
-      http.get('/articles', {
+      console.log('user login', this.state.userLogin)
+      http.get('/articles/author/' + this.state.userLogin.id, {
         headers: {
           token: tokenUser
         }
