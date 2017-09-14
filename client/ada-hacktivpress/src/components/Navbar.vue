@@ -14,7 +14,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
         <ul class="nav navbar-nav">
           <li>
-            <router-link to="/myblog">My Question</router-link>
+            <router-link to="/myblog">My Blog</router-link>
           </li>
           <li>
             <router-link to="/create">Create Blog</router-link>
