@@ -116,10 +116,10 @@ export default {
       .then(({data}) => {
         if (!data.hasOwnProperty('errors')) {
           console.log(data)
-          localStorage.setItem('ada-overflow', data.token)
+          localStorage.setItem('ada-hacktivpress', data.token)
           this.getUserLogin(data.token)
           this.getUserLoginArticles(data.token)
-          // this.$router.push({path: 'home'})
+          this.$router.push({path: 'home'})
         }
         this.status = true
         this.error_msg = data.message

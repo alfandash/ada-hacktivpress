@@ -54,34 +54,34 @@ const store = new Vuex.Store({
       .catch(err => {
         commit('setArticles', err)
       })
+    },
+    getUserLogin ({ commit }, tokenUser) {
+      http.get('/users/info', {
+        headers: {
+          token: tokenUser
+        }
+      })
+      .then(({ data }) => {
+        commit('setUserLogin', data)
+      })
+      .catch(err => {
+        commit('setUserLogin', err)
+      })
+    },
+    getUserLoginArticles ({ commit }, tokenUser) {
+      http.get('/articles', {
+        headers: {
+          token: tokenUser
+        }
+      })
+      .then(({ data }) => {
+        commit('setUserLoginArticles', data)
+        localStorage.setItem('userLoginArtciles', data)
+      })
+      .catch(err => {
+        commit('setUserLoginArticles', err)
+      })
     }
-  },
-  getUserLogin ({ commit }, tokenUser) {
-    http.get('/users/info', {
-      headers: {
-        token: tokenUser
-      }
-    })
-    .then(({ data }) => {
-      commit('setUserLogin', data)
-    })
-    .catch(err => {
-      commit('setUserLogin', err)
-    })
-  },
-  getUserLoginArticles ({ commit }, tokenUser) {
-    http.get('/articles', {
-      headers: {
-        token: tokenUser
-      }
-    })
-    .then(({ data }) => {
-      commit('setUserLoginArticles', data)
-      localStorage.setItem('userLoginArtciles', data)
-    })
-    .catch(err => {
-      commit('setUserLoginArticles', err)
-    })
   }
 })
 
