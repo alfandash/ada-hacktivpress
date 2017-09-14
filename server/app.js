@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 // Require other library: mongoose, cors, .env
 var mongoose = require('mongoose');
 var cors = require('cors')
-require('dotenv').config
+require('dotenv').config()
 
 var app = express();
 
