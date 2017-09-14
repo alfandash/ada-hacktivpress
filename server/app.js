@@ -34,9 +34,11 @@ var db = mongoose.connection
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var articles = require('./routes/articles');
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/articles', articles);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
